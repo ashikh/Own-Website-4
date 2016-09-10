@@ -1,0 +1,44 @@
+<div id="leftSide">
+<img id="bookTable" src="../images/novels/danBrown.jpg" class="img-responsive img-thumbnail novels" alt="Angels & Demons" data-toggle="tooltip" title="Angels & Demons" data-placement="bottom">
+</div>
+<div class="row sign" style="margin-top:20px">
+    <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+        <div class="alert alert-danger" role="alert" ng-show="isError">Invalid emailid or password. Please make sure that password and confirm password are same.</div>
+        <fieldset>
+			<h3>You are just 2 steps away</h3>
+            <h2>Please Sign Up with your details</h2>
+		<form class="sign">
+            <div class="form-group">
+                <input name="user_name" type="text" id="user_name" class="form-control input-lg" placeholder="Enter Full Name" ng-model="user.name" required>
+            </div>
+			<div class="form-group">
+                <input name="user_address" type="text" id="user_address" class="form-control input-lg" placeholder="Enter Full Address" ng-model="user.address" required>
+            </div>
+			<div class="form-group">
+                <input name="user_number" type="text" id="user_number" class="form-control input-lg" placeholder="Contact Number" ng-model="user.number" required>
+            </div>
+			<div class="form-group">
+                <input name="user_id" type="text" id="user_id" class="form-control input-lg" placeholder="Email Address" ng-model="user.email">
+            </div>
+            
+            <div class="form-group">
+                <input type="password" name="password" id="password" class="form-control input-lg" placeholder="Password" ng-model="user.password">
+            </div>
+            
+             <div class="form-group">
+                <input type="password" name="password" id="password" class="form-control input-lg" placeholder="Confirm Password" ng-model="user.confirmpassword">
+            </div>
+                <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-6">
+                        <input type="button" name="SignUp" value="Sign Up" class="btn btn-lg btn-success btn-block" ng-click="doSignUp(user);">
+                    </div>
+                    <div id="registered" class="col-xs-6 col-sm-6 col-md-6"> <a href="#/login" class="btn btn-lg btn-primary btn-block">Login</a> </div>
+                </div>
+			</form>
+        <!--</form>-->
+		</fieldset>
+	</div>
+</div>
+<div id="right">
+<img id="bookTable" src="../images/novels/david.jpg" class="img-responsive img-thumbnail novels" alt="1776" data-toggle="tooltip" title="1776" data-placement="bottom">
+</div>
